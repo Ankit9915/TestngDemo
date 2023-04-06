@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="1" total="12" passed="10" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-03-29T01:57:50 IST" name="Suite" finished-at="2023-03-29T01:57:50 IST" duration-ms="200">
+    <groups>
+      <group name="smoke">
+        <method signature="BasicDemo.demo()[pri:0, instance:test.BasicDemo@3059cbc]" name="demo" class="test.BasicDemo"/>
+        <method signature="BasicDemo2.run1()[pri:0, instance:test.BasicDemo2@4d5b6aac]" name="run1" class="test.BasicDemo2"/>
+        <method signature="BasicDemo3.apiLogin()[pri:0, instance:test.BasicDemo3@483f6d77]" name="apiLogin" class="test.BasicDemo3"/>
+      </group> <!-- smoke -->
+    </groups>
+    <test started-at="2023-03-29T01:57:50 IST" name="Test" finished-at="2023-03-29T01:57:50 IST" duration-ms="200">
+      <class name="test.BasicDemo">
+        <test-method is-config="true" signature="prerequiste()[pri:0, instance:test.BasicDemo@3059cbc]" started-at="2023-03-29T01:57:50 IST" name="prerequiste" finished-at="2023-03-29T01:57:50 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prerequiste -->
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:test.BasicDemo@3059cbc]" started-at="2023-03-29T01:57:50 IST" name="beforeClass" finished-at="2023-03-29T01:57:50 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="demo()[pri:0, instance:test.BasicDemo@3059cbc]" started-at="2023-03-29T01:57:50 IST" name="demo" finished-at="2023-03-29T01:57:50 IST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- demo -->
+        <test-method signature="fail()[pri:0, instance:test.BasicDemo@3059cbc]" started-at="2023-03-29T01:57:50 IST" name="fail" finished-at="2023-03-29T01:57:50 IST" duration-ms="19" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at org.testng.Assert.assertTrue(Assert.java:55)
+at test.BasicDemo.fail(BasicDemo.java:36)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fail -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:test.BasicDemo@3059cbc]" started-at="2023-03-29T01:57:50 IST" name="afterClass" finished-at="2023-03-29T01:57:50 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="last()[pri:0, instance:test.BasicDemo@3059cbc]" started-at="2023-03-29T01:57:50 IST" name="last" finished-at="2023-03-29T01:57:50 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- last -->
+      </class> <!-- test.BasicDemo -->
+      <class name="test.BasicDemo3">
+        <test-method signature="phoneLogin(java.lang.String,int)[pri:0, instance:test.BasicDemo3@483f6d77]" started-at="2023-03-29T01:57:50 IST" name="phoneLogin" finished-at="2023-03-29T01:57:50 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[qaclickacademy.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- phoneLogin -->
+        <test-method signature="phoneRegin()[pri:0, instance:test.BasicDemo3@483f6d77]" started-at="2023-03-29T01:57:50 IST" name="phoneRegin" finished-at="2023-03-29T01:57:50 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- phoneRegin -->
+        <test-method signature="apiLogin()[pri:0, instance:test.BasicDemo3@483f6d77]" started-at="2023-03-29T01:57:50 IST" name="apiLogin" finished-at="2023-03-29T01:57:50 IST" duration-ms="9" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- apiLogin -->
+        <test-method signature="phoneSignin(java.lang.String,java.lang.String)[pri:0, instance:test.BasicDemo3@483f6d77]" started-at="2023-03-29T01:57:50 IST" name="phoneSignin" data-provider="getData" finished-at="2023-03-29T01:57:50 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firstusername]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[password]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- phoneSignin -->
+        <test-method signature="phoneSignin(java.lang.String,java.lang.String)[pri:0, instance:test.BasicDemo3@483f6d77]" started-at="2023-03-29T01:57:50 IST" name="phoneSignin" data-provider="getData" finished-at="2023-03-29T01:57:50 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[secondusername]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[passwordsecond]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- phoneSignin -->
+        <test-method signature="phoneSignin(java.lang.String,java.lang.String)[pri:0, instance:test.BasicDemo3@483f6d77]" started-at="2023-03-29T01:57:50 IST" name="phoneSignin" data-provider="getData" finished-at="2023-03-29T01:57:50 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[thirdusername]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[passwordthird]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- phoneSignin -->
+        <test-method signature="phoneLogout()[pri:0, instance:test.BasicDemo3@483f6d77]" started-at="2023-03-29T01:57:50 IST" name="phoneLogout" finished-at="2023-03-29T01:57:50 IST" depends-on-methods="test.BasicDemo3.phoneLogin, test.BasicDemo3.phoneRegin" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- phoneLogout -->
+        <test-method is-config="true" signature="lastSuit()[pri:0, instance:test.BasicDemo3@483f6d77]" started-at="2023-03-29T01:57:50 IST" name="lastSuit" finished-at="2023-03-29T01:57:50 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- lastSuit -->
+      </class> <!-- test.BasicDemo3 -->
+      <class name="test.BasicDemo2">
+        <test-method is-config="true" signature="beforesuite()[pri:0, instance:test.BasicDemo2@4d5b6aac]" started-at="2023-03-29T01:57:50 IST" name="beforesuite" finished-at="2023-03-29T01:57:50 IST" duration-ms="13" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforesuite -->
+        <test-method signature="run()[pri:0, instance:test.BasicDemo2@4d5b6aac]" started-at="2023-03-29T01:57:50 IST" name="run" finished-at="2023-03-29T01:57:50 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- run -->
+        <test-method signature="run1()[pri:0, instance:test.BasicDemo2@4d5b6aac]" started-at="2023-03-29T01:57:50 IST" name="run1" finished-at="2023-03-29T01:57:50 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- run1 -->
+      </class> <!-- test.BasicDemo2 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
